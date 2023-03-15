@@ -1,0 +1,29 @@
+/* back to topr */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 165px;
+    color: $black-color;
+    background-color: #f7f3ef;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: $transition;
+    z-index: 999;
+    display: none;
+
+    @include tablet {
+        bottom: 50px;
+    }
+    @include all-phone {
+        bottom: 50px;
+    }
+
+    &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+    }
+}
